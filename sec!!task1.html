@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Convert Age Into Days</h1>
+
+<input type="text" name="" id="show">
+<button onclick="fun1()">click me</button>
+<h1 id="result"></h1>
+
+<body>
+    <script>
+        function fun1(){
+            var age = document.getElementById("show").value;
+        var year = 365.24;
+        var convertage = age * year;
+      document.getElementById("result").innerHTML="days are " + convertage;
+        }
+
+        
+
+    </script>
+</body>
+
+</html>

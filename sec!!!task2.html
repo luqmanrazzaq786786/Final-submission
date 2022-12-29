@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>to check number is greater than 5 and all odd numbers are added</h1>
+
+    <input type="text" name="" id="num1">
+
+    <button onclick="fun1()">Click me</button>
+    <h1 id="showoddnum"></h1>
+
+    <script>
+
+        function fun1() {
+            var num = document.getElementById("num1").value;
+            var arr = [];
+            var temp = 0;
+
+            if (num.length < 5) {
+                alert("numbers should be greater than five")
+            }
+            else {
+
+                for (var i = 0; i < num.length; i++) {
+                    arr.push(parseInt(num[i]));
+                    console.log(arr);
+                }
+
+
+
+                for (var j = 0; j < arr.length; j++) {
+                    if ((arr[j]) % 2 == 0) {
+                        console.log("hello");
+                    } else {
+                        temp += arr[j];
+
+                    }
+                }
+              
+                document.getElementById("showoddnum").innerHTML = "sum of all odd numbers are " +  temp;
+            }
+
+        
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

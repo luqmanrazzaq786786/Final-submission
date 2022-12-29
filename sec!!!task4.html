@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Get years months and days form DOB</h1>
+    <h1>Enter Date Of Birth</h1>
+    Day:<input type="number" name="" id="dob1">
+    Month:<input type="number" name="" id="dob2">
+    Year:<input type="number" name="" id="dob3">
+
+
+    <button onclick="fun1()">click me</button>
+
+    <h1 id="show"></h1>
+
+    <script>
+        function fun1() {
+            var store1 = + document.getElementById("dob1").value;
+            var store2 = + document.getElementById("dob2").value;
+            var store3 = + document.getElementById("dob3").value;
+
+
+
+            var date = new Date();
+            var finaldate = date.getDate();
+            var finalmonth = 1 + date.getMonth();
+            var finalyear = date.getFullYear();
+
+
+            var date1 = finaldate - store1;
+            // console.log(date1);
+            var month1 = finalmonth - store2;
+            // console.log(month1);
+            var year1 = finalyear - store3;
+            // console.log(year1);
+
+            document.getElementById("show").innerHTML = "Sir Your age in days are " + date1 + "days" + "<br>" + " in months " + month1 + "months" + "<br>" + " and in Years " + year1 + "years";
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

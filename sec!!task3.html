@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Formate Upto Specified Decimal Places:</h1>
+    Enter Your Value here:
+    <input type="number" id="user1">
+
+    Formate Upto Specified Decimal Places:
+    <input type="number" id="user2">
+    <h1 id="show1"></h1>
+
+    <button onclick="fun1()">Click me</button>
+    <script>
+
+        function fun1() {
+            var store = document.getElementById("user1").value;
+            var store1 = parseInt(document.getElementById("user2").value);
+            var arr = "";
+
+            for (var i = 0; i < store1 + 2; i++) {
+                // arr.push(store[i]);
+                arr = arr + store[i];
+
+
+
+            }
+            document.getElementById("show1").innerHTML = arr
+            console.log(arr)
+
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Enter your String and check is palindrom or not</h1>
+
+    <input type="text" name="" id="palindrom">
+    <button onclick="fun1()">Click me</button>
+    <h1 id="show"></h1>
+    <h1 id="show1"></h1>
+
+    <script>
+        function fun1() {
+            var string = document.getElementById("palindrom").value;
+            var len = string.length;
+            console.log(len);
+
+            for (var i = 0; i < len / 2; i++) {
+                // console.log(string[i])
+                // console.log(string[len - 1 - i])
+                if (string[i] != string[len - 1 - i]) {
+
+                    document.getElementById("show").innerHTML = "its not a palindorm"
+                    break;
+                }
+
+                else {
+                    document.getElementById("show1").innerHTML = "its a palindorm"
+
+                }
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
